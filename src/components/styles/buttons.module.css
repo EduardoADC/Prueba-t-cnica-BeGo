@@ -1,0 +1,40 @@
+.overview {
+  position: absolute;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  background-color: #ffff00;
+  border-radius: 22px;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 4px;
+}
+
+.overview:hover {
+  border-top: purple 2px solid;
+  border-left: purple 2px solid;
+  opacity: 0.8;
+}
+
+.start_pickup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  color: #ffffff;
+  background: linear-gradient(to right, rgb(12, 18, 22), rgb(33, 36, 37));
+  border: none;
+  border-radius: 22px;
+  padding: 0.5rem;
+}
+.start_pickup:hover {
+  border-top: gray 1px solid;
+  border-right: gray 1px solid;
+}
+
+.start_date {
+  color: #ffff00;
+}

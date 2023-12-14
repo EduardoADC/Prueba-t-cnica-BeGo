@@ -1,0 +1,152 @@
+.order {
+  display: flex;
+  gap: 16px;
+  /* align-items: baseline; */
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 1em;
+  border-radius: 22px;
+  background: rgb(12, 18, 22);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px; /* same as border width */
+  border-radius: inherit; /* inherit container box's radius */
+  background: radial-gradient(black, gray, black);
+}
+
+.card:after {
+  content: "";
+  height: 30%;
+  width: 1px;
+  position: absolute;
+  left: -1px;
+  top: 65%;
+  transition: top, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  background: linear-gradient(transparent, white, transparent);
+  opacity: 0;
+}
+
+.card:after {
+  top: 65%;
+  opacity: 0;
+}
+
+.card:hover:after {
+  top: 25%;
+  opacity: 1;
+}
+
+.order_title {
+  color: rgb(187, 187, 187);
+}
+.order_title > b {
+  color: white;
+}
+
+.order_type {
+  display: flex;
+  font-weight: bold;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  min-height: 3.5em;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+}
+
+hr {
+  position: absolute;
+  left: -1px;
+  width: 100%;
+  border-color: gray;
+  margin: auto;
+}
+
+.order_status {
+  display: flex;
+  gap: 8px;
+}
+
+.status_circle {
+  align-self: center;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.grey-dot-bg {
+  background-color: #989898;
+}
+
+.blue-dot-bg {
+  background-color: #0394ff;
+}
+
+/* SEARCH BAR STYLES */
+.search_container {
+  color: #555;
+  display: flex;
+  padding: 2px 5px;
+  position: relative;
+  border-radius: 15px;
+  width: 100%;
+  align-items: center;
+}
+.search_container:focus-within {
+  box-shadow: 0px 0px 15px 1px rgba(255, 254, 254, 0.2);
+}
+.search_container::after {
+  content: "";
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+}
+
+.search_bar {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  width: 100%;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+.search_bar:focus {
+  border-color: none;
+  outline: none;
+}
+
+.search_icon_container {
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  line-height: 0;
+  padding: 5px;
+  background: linear-gradient(
+    rgba(255, 254, 254, 0.03),
+    rgba(255, 254, 254, 0.15)
+  );
+}

@@ -1,0 +1,150 @@
+.card {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 1em;
+  border-radius: 22px;
+  background: rgb(12, 18, 22);
+}
+
+.sections {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 2em;
+}
+
+.icon_section {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 0, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.destination_section {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.destination_nickname {
+  color: rgb(187, 187, 187);
+  font-size: 14px;
+}
+
+.destination_state {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.address_section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.full_address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  color: rgb(187, 187, 187);
+}
+
+.pill {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+  font-size: 14px;
+  color: rgb(187, 187, 187);
+  background: rgb(28, 41, 49);
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: fit-content;
+  border-radius: 24px;
+}
+
+.accepted {
+  align-self: center;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #0394ff;
+}
+.pending {
+  align-self: center;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #989898;
+}
+
+p {
+  margin: 0;
+}
+
+.icon_circle {
+  position: absolute;
+  right: 50%;
+  top: -25px;
+  transform: translateX(25px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  background: gray;
+  align-items: center;
+  justify-content: center;
+}
+
+.hour_driver {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.status_steps {
+  display: flex;
+  min-height: 3.5em;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.done {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 0, 1);
+  border-radius: 50%;
+}
+
+.pending_status {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.row_status {
+  display: flex;
+  gap: 0.5em;
+  margin: 0.5em 3em;
+  justify-content: start;
+}
+
+.pickup_title {
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
